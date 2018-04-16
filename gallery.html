@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Home page</title>
+</head>
+<style>
+
+</style>
+<body bgcolor="#E6E6FA">
+<center>
+<h1>Gallery</h1>
+</center>
+<center>
+<marquee style="color:red;"><h2>Welcome To Campus View </h2></marquee>
+</center>
+<center>
+<div class="w3-content w3-section" style="max-width:400px">
+  <img class="mySlides" src="q.jpg" style="width:100%">
+  <img class="mySlides" src="r.jpg" style="width:100%">
+  <img class="mySlides" src="p.jpg" style="width:100%">
+</div>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<div align="center">
+<table width="685" height="307" border="1">
+  <tbody>
+    <tr>
+      <td width="345" height="259" style="background-color:#B3B7FF"><center>
+        <img src="top.jpg" width="350" height="251" alt=""/>
+      </center></td>
+      <td width="324" style="background-color:#B3B7FF"><center><img src="hostel.jpg" width="330" height="250" alt=""/></center></td>
+    </tr>
+    <tr>
+      <td height="40" style="background-color:#4F4F4F"><center><font size="+3"><b style="color:#FFFFFF">top view</b></font></center></td>
+      <td style="background-color:#4F4F4F"><center><font size="+3"><b style="color:#FFFFFF">Hostel View</b></font></center></td>
+    </tr>
+  </tbody>
+</table>
+<table width="685" height="307" border="1">
+  <tbody>
+    <tr>
+      <td width="345" height="259" style="background-color:#B3B7FF"><center>
+        <img src="audi.jpg" width="345" height="262" alt=""/>
+      </center></td>
+      <td width="324" style="background-color:#B3B7FF"><center>
+        <img src="sports.jpg" width="328" height="262" alt=""/>
+      </center></td>
+    </tr>
+    <tr>
+      <td height="40" style="background-color:#4F4F4F"><center><font size="+3"><b style="color:#FFFFFF">Auditorium</b></font></center></td>
+      <td style="background-color:#4F4F4F"><center><font size="+3"><b style="color:#FFFFFF">Sports Activities</b></font></center></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>
+
+
